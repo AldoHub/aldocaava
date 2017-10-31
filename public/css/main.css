@@ -81,6 +81,9 @@ section {
     margin-bottom: 50px;
 }
 
+section h1 {
+    margin-bottom: 15px;
+}
 .container {
     margin: 0 auto;
     width: 90%;
