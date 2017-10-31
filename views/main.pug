@@ -1,0 +1,31 @@
+extends layout
+block content
+    
+    
+
+    section.intro
+        h1#aboutme AboutMe
+        div.aboutme
+            p I am a self-taught web developer, although we can say I am a Full Stack Web Developer, well you know, after learning one thing, I had to learn another thing, and then that same thing needed to be used with another thing, and it went like that for a while.
+            p I do not consider myself an expert in any matter, but I like to learn, which I consider a must-have skill. 
+                
+
+    section
+        h1#myskills WhatIKnow
+        canvas(id="canvas")     
+        canvas(id="backend")
+
+    section
+        h1#myrepos MyRepos
+        div.repo-container
+            if (repos != null)    
+                each repo, i in repos
+                    div.repo
+                        p.letter=letters[i]
+                        h1=repo.name
+                        p
+                            a(href=repo.html_url)=repo.full_name
+                        p=repo.description    
+
+            else
+                p Github is no available, sorry.

@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;  
+    background: #111;
+    color: aliceblue;
+    font-family: "Bree serif", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body * {
+    transition: all 300ms ease-in-out;
+}
+
+.banner{
+    background: url("/images/pexels-photo-590138-min.jpeg")fixed;
+    height: 100vh;
+    background-size: 100%;
+    margin-bottom: 50px;
+}
+
+
+nav.social {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+   z-index: 99;
+
+}
+
+
+nav.main{
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background:#111;
+    z-index: 99;
+}
+
+
+nav.main ul {
+    
+    padding: 0px 10px 0px 0px;
+    margin: 0;
+
+}
+
+nav.main ul li a, nav.social ul li a{
+    color: #444;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+
+}
+nav.social ul li {
+    border-radius: 100%;
+}
+
+nav.social ul li a {
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+
+
+nav.main ul li, nav.social ul li {
+    display: inline-table;
+    margin:  0;
+    padding: 0;
+}
+
+nav.main ul li a:hover{
+    color: #20EB09;
+    background: #000;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    
+}
+.container h1 {
+    font-family: "Satisfy";
+    color: #222;
+    border-bottom:1px solid #222;
+}
+
+
+.aboutme p{
+    font-size: 40px;
+}
+
+.repo-container{
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid #222;
+    text-align: center;
+}
+
+.repo {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    
+    display: inline-table;
+}
+
+
+.repo h1 {
+    font-family: "Bree serif";
+    padding-bottom: 10px;
+    color: #eee;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+.repo  p {
+    margin-bottom: 10px;
+    font-family: "Oxygen";
+}
+
+.repo:hover {
+    background: #222;
+    color: #eee;
+   
+}
+
+.repo p a {
+    color: #444;
+    text-decoration: none;
+}
+
+.repo:hover p a {
+    color: #20EB09;    
+    text-decoration: underline;
+}
+
+.github, .twitter {
+    display: block;
+    width: 47px;
+    opacity: 0.5;
+    height: 47px;
+    text-decoration: none;
+}
+
+
+.github:hover {
+    background: url("/images/if_github_circle_gray_107139.png");
+    opacity:1;
+    
+}
+
+.twitter {
+    background: url("/images/if_twitter_circle_black_107155.png");
+
+}
+
+.github {
+    background: url("/images/if_github_circle_black_107161.png");
+    
+}
+
+.twitter:hover {
+    background: url("/images/if_twitter_circle_color_107170.png");
+    opacity:1;
+}
+
+
+.repo .letter {
+    font-size: 120px;
+    font-family: "Bree serif";
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: #333; 
+    
+}
+
+.repo:hover .letter {
+    color: #FFFFFF;
+    transform: scale(1.3);
+    text-shadow: 0px 0px 10px #000;
+}
+
+.rest {
+    background: url("/images/pexels-photo-590137-min.jpeg")fixed;
+    background-size: 100%;
+    height: 100vh;
+}
+
+footer {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    border-top:1px solid #222;
+    padding: 20px 0px 40px 0px;
+    font-size: 12px;
+}
+
+footer *{
+    color: #444;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+@media (min-width:0px) and (max-width:480px){
+   .banner {
+       height: 20vh;
+   } 
+   .repo-container {
+    column-count: 1;
+}
+
+   .banner, .rest {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+footer {
+    width: 100%;
+    
+    margin: 0;
+
+}
+}
+
+@media (min-width:481px) and (max-width:900px){
+
+    .banner, .rest {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        height: 30vh;
+    } 
+    
+    .repo-container {
+        column-count: 2;
+    }
+    
+    .rest {
+        height: 50vh;
+    }
+    
+    footer {
+        width: 100%;
+        margin: 0;
+
+    }
+
+
+}
