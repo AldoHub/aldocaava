@@ -1,6 +1,8 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;  
+    width: 100%;
+    max-width: 1920px;
     background: #111;
     color: aliceblue;
     font-family: "Bree serif", Verdana, Geneva, Tahoma, sans-serif;
@@ -8,6 +10,8 @@ body {
 
 body * {
     transition: all 300ms ease-in-out;
+    padding: 0px;
+    margin: 0px;
 }
 
 .banner{
@@ -73,6 +77,10 @@ nav.main ul li a:hover{
 }
 
 
+section {
+    margin-bottom: 50px;
+}
+
 .container {
     margin: 0 auto;
     width: 90%;
@@ -87,6 +95,11 @@ nav.main ul li a:hover{
 
 .aboutme p{
     font-size: 40px;
+}
+
+canvas {
+    display: block;
+    margin-bottom: 50px;
 }
 
 .repo-container{
@@ -187,6 +200,7 @@ nav.main ul li a:hover{
     background: url("/images/pexels-photo-590137-min.jpeg")fixed;
     background-size: 100%;
     height: 100vh;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -205,6 +219,13 @@ footer *{
 
 }
 
+#path{
+    position: fixed;
+    z-index: 98;
+    left: 95%;
+    height: 100vh;
+    top: 120px;
+}
 
 @media (min-width:0px) and (max-width:480px){
    .banner {
@@ -212,19 +233,22 @@ footer *{
    } 
    .repo-container {
     column-count: 1;
-}
+   }
 
    .banner, .rest {
     background-attachment: scroll;
     background-repeat: no-repeat;
     height: 30vh;
-}
-footer {
-    width: 100%;
-    
-    margin: 0;
+    }
+    nav.social {
+        bottom: 130px;
+    }
+    footer {
+        width: 100%;
+        
+        margin: 0;
 
-}
+    }
 }
 
 @media (min-width:481px) and (max-width:900px){
@@ -243,11 +267,13 @@ footer {
         height: 50vh;
     }
     
+    
     footer {
         width: 100%;
         margin: 0;
 
     }
+
 
 
 }
