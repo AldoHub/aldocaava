@@ -1,6 +1,6 @@
 var ctx = document.getElementById("backend").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'polarArea',
+    type: 'bar',
     data: {
         labels: ["Node & Express", "Php", "Ajax", "MySQL", "MongoDB", "GraphQL"],
         datasets: [{
