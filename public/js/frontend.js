@@ -5,7 +5,8 @@ var myChart = new Chart(ctx, {
         labels: ["HTML", "CSS", "JS", "Angular 4 ", "React & Redux", "Jquery"],
         datasets: [{
             label: 'Front End',
-            data: [9, 8, 9, 7, 7, 9],backgroundColor: [
+            data: [9, 8, 9, 7, 7, 9],
+            backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
@@ -21,7 +22,7 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 0
         }]
     },
     options: {

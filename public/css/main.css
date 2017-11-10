@@ -15,7 +15,8 @@ body * {
 }
 
 .banner{
-    background: url("/images/pexels-photo-590138-min.jpeg")fixed;
+  background: url("/images/wall-animal-dog-pet-min.jpg")fixed; 
+   
     height: 100vh;
     background-size: 100%;
     margin-bottom: 50px;
@@ -154,31 +155,31 @@ canvas {
 
 .github, .twitter {
     display: block;
-    width: 47px;
+    width: 32px;
     opacity: 0.5;
-    height: 47px;
+    height: 32px;
     text-decoration: none;
 }
 
 
 .github:hover {
-    background: url("/images/if_github_circle_gray_107139.png");
+ 
     opacity:1;
     
 }
 
 .twitter {
-    background: url("/images/if_twitter_circle_black_107155.png");
+    background: url("/images/if_twitter_six_107069.png");
 
 }
 
 .github {
-    background: url("/images/if_github_circle_black_107161.png");
+    background: url("/images/if_github_six_gray_107108.png");
     
 }
 
 .twitter:hover {
-    background: url("/images/if_twitter_circle_color_107170.png");
+  
     opacity:1;
 }
 
@@ -202,9 +203,10 @@ canvas {
 }
 
 .rest {
-    background: url("/images/pexels-photo-590137-min.jpeg")fixed;
+     background: url("/images/pexels-photo-247968-min.jpeg")fixed; 
+  
     background-size: 100%;
-    height: 100vh;
+    height: 60vh;
     margin-bottom: 10px;
 }
 
@@ -233,10 +235,6 @@ footer *{
 }
 
 @media (min-width:0px) and (max-width:480px){
-   .banner {
-       height: 20vh;
-   } 
-
    
    .repo-container {
     column-count: 1;
@@ -252,11 +250,13 @@ footer *{
    }
    
     nav.social {
-        bottom: 40px;
+       
+       bottom: 10px;
+       
     }
     footer {
         width: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 30px;
         margin: 0;
 
     }
@@ -267,7 +267,7 @@ footer *{
     .banner, .rest {
         background-attachment: scroll;
         background-repeat: no-repeat;
-        height: 30vh;
+        height: 50vh;
     } 
     
     .repo-container {
