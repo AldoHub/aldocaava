@@ -1,3 +1,5 @@
+
+
 var triangle = document.getElementById("pathline");
 var length = triangle.getTotalLength();
 
@@ -18,3 +20,4 @@ function myFunction() {
   // Reverse the drawing (when scrolling upwards)
   triangle.style.strokeDashoffset = length - draw;
 }
+
