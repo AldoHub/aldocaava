@@ -15,9 +15,8 @@ body * {
 }
 
 .banner{
-  background: url("/images/pexels-photo-591755-min.jpeg")fixed; 
-   
-    height: 100vh;
+    background: url("/images/pexels-photo-591755-min.jpeg")center; 
+    height: 500px;
     background-size: 100%;
     margin-bottom: 50px;
 }
@@ -39,6 +38,7 @@ nav.main{
     background: #111;
     transform: translateY(-100px);
     z-index: 99;
+    border-bottom:1px solid #222;
 }
 
 
@@ -199,6 +199,8 @@ canvas {
     padding: 10px;
     margin: 0;
     color: #333; 
+    user-select: none;
+    user-select: none;
     
 }
 
@@ -242,7 +244,8 @@ footer *{
    .banner {
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 25vh;
+    height: 200px;
+   
    
     }
 
@@ -275,7 +278,7 @@ footer *{
     .banner{
         background-attachment: scroll;
         background-repeat: no-repeat;
-        height: 50vh;
+        height: 300px;
     } 
     
     .repo-container {
