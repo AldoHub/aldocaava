@@ -459,10 +459,9 @@ nav.main {
     z-index: 99;
     font-family: "Questrial", sans-serif;
     background: #eee;
-    padding: 0;
+    padding:0;
     margin: 0;
     text-align: center;
-    box-shadow: 0px 2px 2px #888;
 }
 
 nav.main ul, ul.social {
@@ -485,7 +484,7 @@ nav.main ul li {
 }
 
 nav.main ul li a {
-    padding: 24px;
+    padding: 10px;
     display: block;
     text-decoration: none;
     color: #222;
@@ -496,13 +495,18 @@ nav.main ul li a:hover {
 }
 
 #aldo {
-  font-size: 30px;
-  color: #aaa;
+  color: #111;
+  position: relative;
   
 }
 
+#menu-bars {
+  position: absolute;
+  right: 10px;
+}
+
 .banner {
-    background: url("../images/photo-1468971050039-be99497410af.jpg");
+    background: url("../images/louis-smit-465591.jpg");
     height: 800px;
     display: block;
     background-size: cover;
@@ -534,7 +538,7 @@ canvas {
   margin: 5px;
   text-align: center;
   height: auto;
-  word-break: break-all;
+  
   display: inline-block;
 }
 
@@ -557,8 +561,8 @@ canvas {
 footer {
     border-top:1px solid #ddd;
     text-align: center;
-    padding-bottom: 50px;
-    padding-top: 20px;  
+   padding: 10px;  
+   color: #aaa;
 }
 
 
@@ -585,13 +589,6 @@ ul.social li a:hover{
   color: #0055FF;
 }
 
-footer p:last-of-type {
-  margin: 0;
-  padding-right: 20px;
-  text-align: right;
-  color: #bbb;
-  
-}
 
 #menu-bars {
   display: none;
@@ -611,14 +608,16 @@ footer p:last-of-type {
     width: 100%;
   }
 
+  
   nav.main ul:first-of-type{
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    
   }
 
   nav.main ul li {
     display: block;
     text-align: center;
+    padding: 14px 0;
     margin: 0;
   }
   nav.main ul#menu li:hover {
@@ -632,13 +631,18 @@ footer p:last-of-type {
    border-bottom: 1px solid #ddd;
   }
 
+  nav.main ul:last-of-type {
+   display: none;
+  }
+
   .banner {
-   height: 40vh;
+   display: none;
     
   }
   .repo {
     width: 90%;
     display: block;
+    padding: 10px;
     margin: 0 auto;
   }
   #menu-bars {
