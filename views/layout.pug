@@ -4,7 +4,7 @@ html
     title A little about me
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name="description" content="My name is Aldo Caamal, this is a little app that tells a part of how I became a Web Developer.")
-    
+    meta(charset="utf-8")
     meta(name="msapplication-TileColor" content="#ffffff")
     meta(name="msapplication-TileImage" content="/ms-icon-144x144.png")
     meta(name="theme-color" content="#ffffff")
@@ -25,45 +25,54 @@ html
     link(rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png")
     link(rel="manifest" href="/manifest.json")
 
-
-
+    
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css")
     link(rel="stylesheet" href="/css/main.css")
     
-    link(href="https://fonts.googleapis.com/css?family=Satisfy|Oxygen|Bree+Serif" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Arvo|Questrial" type="text/css" rel="stylesheet")
     
   body
-    
-    nav.main
-        ul
-            li
-                a(href="#aboutme" ) AldoCaava
-            li
-                a(href="#myskills") WhatIKnow
-            li
-                a(href="#myrepos") MyRepos    
-   
-
-
-    nav.social
-        ul
-            
-            li
-                a(href="https://twitter.com/aldocaava" title="check out my Twitter" target="_blank" class="twitter") &nbsp;
-            li
-                a(href="https://github.com/AldoHub" title="check out my Repos" target="_blank" class="github") &nbsp;    
-          
-    header.banner
     main.container
+        nav.main
+            ul(id="menu")
+                li
+                    a(href="#home" id="aldo") aldo &nbsp;
+                          i.fa.fa-bars(aria-hidden="true" id="menu-bars")
+                
+            ul
+                li
+                    a(href="#aboutme" ) About Me
+                li
+                    a(href="#myskills") My Skills
+                li
+                    a(href="#myrepos") My Repos    
+    
+        header.banner
+        
         block content
- 
+    
       
 
 
   
     footer
-      p A little something about me &amp; the things I do.
-      p Aldo Caamal
-      p aldocaava@hotmail.com
+        p This app was made using Node / Express / ChartJs / Pug &amp; Github API.
+        p My email and social media links:
+        p aldocaava@hotmail.com
+        ul.social
+            li 
+                a(href="https://twitter.com/aldocaava" target="_blank")
+                    i.fa.fa-twitter(aria-hidden="true")  
+                  
+            li 
+                a(href="https://github.com/AldoHub" target="_blank")
+                    i.fa.fa-github(aria-hidden="true")  
+        p By aldocaava 
+   
+   
+   
+   
+   
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous")  
@@ -72,4 +81,4 @@ html
     script(src="/js/backend.js")
     script(src="/js/zenscroll-min.js")
    
-    script(src="/js/plugin.js")
+    script(src="/js/functions.js")

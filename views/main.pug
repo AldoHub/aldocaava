@@ -6,27 +6,28 @@ block content
 
     
 
-    section
-        h1#aboutme AboutMe
+    section#aboutme
+        h1 About Me
         div.aboutme
-            p I am a self-taught web developer, although we can say I am a Full Stack Web Developer, well you know, after learning one thing, I had to learn another thing, and then that same thing needed to be used with another thing, and it went like that for a while.
-            p I do not consider myself an expert in any matter, but I like to learn, which I consider a must-have skill. 
-            p To me, simplicity is the way to go, to tell something without saying a lot means to choose your words better, saying only what's need to be said.     
+            p I am a self-taught Full Stack Web Developer.
+            p I have been learning Web Technologies for about 3 years or so, but I have been doing it alone, maybe I do not follow all the best practices but I try to improve and learn more every day.
+            p My style is simple, yes, I like simple things, things that show as they are, and I apply this into my designs. To me, to be simple means to stay in touch with the things that matter the most. 
 
-    section
-        h1#myskills WhatIKnow
+
+    section#myskills
+        h1 What I Know
         canvas(id="backend")
         canvas(id="canvas")
         
 
-    section
-        h1#myrepos MyRepos
+    section#myrepos
+        h1 My Repositories
         div.repo-container
             if (repos != null)    
                 each repo, i in repos
                     div.repo
                         p.letter=letters[i]
-                        h1=repo.name
+                        h2=repo.name
                         p
                             a(href=repo.html_url)=repo.full_name
                         p=repo.description    

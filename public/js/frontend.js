@@ -1,6 +1,6 @@
 var ctx = document.getElementById("canvas").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'polarArea',
     data: {
         labels: ["HTML", "CSS", "JS", "Angular 4 ", "React & Redux", "Jquery"],
         datasets: [{
