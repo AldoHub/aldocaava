@@ -559,12 +559,19 @@ canvas {
 }
 
 footer {
-    border-top:1px solid #ddd;
-    text-align: center;
-   padding: 10px;  
-   color: #aaa;
+   text-align: center;
+   padding: 20px 10px;
+   background: #ddd;  
+   color: #444;
 }
 
+footer ul {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
 
 ul.social {
   text-align: center;
@@ -573,7 +580,7 @@ ul.social {
 }
 
 ul.social li {
-  list-style-type:none;
+  
   display: inline-table;
   font-size: 35px; 
   margin:5px 30px;
@@ -581,7 +588,7 @@ ul.social li {
 
 ul.social li a{
   display: block;
-  color: #ddd;
+ color: #111;
 }
 
 ul.social li a:hover{
