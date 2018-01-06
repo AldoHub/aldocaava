@@ -428,11 +428,14 @@
 
 
 /* ------------------------------------- MY STYLING ------------------------------- */
+HTML {
+  background: #ddd;
+}
 
 body {
     padding: 0;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1300px;
     margin: 0 auto;
     background: #eee; 
     box-shadow: 0px 5px 2px #888;
@@ -455,59 +458,45 @@ h1,h2,h3,h4 {
 nav.main {
     position: fixed;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1300px;
     z-index: 99;
     font-family: "Questrial", sans-serif;
     background: #eee;
     padding:0;
     margin: 0;
     text-align: center;
+    
 }
 
-nav.main ul, ul.social {
-    text-align: right;
-    display: inline-table;
-    width: 45%;
+nav.main ul {
+    display: inline-block;
+    width: 42%;
     padding: 0;
+    list-style-type: none;
     margin: 0;
-    
+   text-align: left;
 }
-nav.main ul:first-of-type {
-    text-align: left;
-    
-}
-
-
 nav.main ul li {
-    display: inline-table;
-    margin-right: 10px;
+  display: inline-table;
 }
-
-nav.main ul li a {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #222;
-    
-}
-nav.main ul li a:hover {
-  color: #0055FF;
-}
-
-#aldo {
+nav.main ul li a{
+  padding: 12px;
+  display: block;
+  text-decoration: none;
   color: #111;
-  position: relative;
-  
+  font-weight: bold;
+}
+nav.main ul:last-of-type li a:hover{
+  color: #EF740E;
+}
+nav.main ul:last-of-type{
+  text-align: right;
 }
 
-#menu-bars {
-  position: absolute;
-  right: 10px;
-}
 
 .banner {
-    background: url("../images/louis-smit-465591.jpg");
-    height: 800px;
+    background: url("../images/photo-1508700115892-45ecd05ae2ad.jpg");
+    height: 700px;
     display: block;
     background-size: cover;
     background-repeat:no-repeat;
@@ -537,8 +526,7 @@ canvas {
   width: 26%;
   margin: 5px;
   text-align: center;
-  height: auto;
-  
+  height: auto;  
   display: inline-block;
 }
 
@@ -566,6 +554,7 @@ footer {
 }
 
 footer ul {
+  text-align: left;
   list-style-type: none;
   display: inline-block;
   vertical-align: middle;
@@ -580,7 +569,7 @@ ul.social {
 }
 
 ul.social li {
-  
+  position: relative;
   display: inline-table;
   font-size: 35px; 
   margin:5px 30px;
@@ -588,31 +577,118 @@ ul.social li {
 
 ul.social li a{
   display: block;
- color: #111;
+ color: #777;
 }
 
 ul.social li a:hover{
   display: block;
-  color: #0055FF;
+  color: #EF740E;
 }
 
 
-#menu-bars {
+#nav-icon{
   display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top:24px;
+  z-index: 99;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
+
+
+#nav-icon span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #EF740E;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 9px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 9px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.open span:nth-child(3) {
+  top: 9px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+#menu li{
+  padding: 10px 0;
+  margin: 0;
+}
+#aldo {
+  font-size: 24px;
+}
+
 
 @media (min-width:850px) and (max-width:1000px){
   .repo{
     width: 40%;
   }
+  
+
 }
 
 
 @media (min-width:0px) and (max-width:849px){
+  nav.main {
+    border-bottom: 4px solid #EF740E;
+    
+  }
+  
   nav.main ul {
     display: block;
     text-align: center;
     width: 100%;
+  }
+  #nav-icon {
+    display: block;
   }
 
   
@@ -627,19 +703,13 @@ ul.social li a:hover{
     padding: 14px 0;
     margin: 0;
   }
-  nav.main ul#menu li:hover {
-    background: #eee;
-  }
-  nav.main ul li:hover {
+  
+  nav.main ul:last-of-type li:hover {
     background: #ddd;
   }
-  main section {
-   padding: 70px 15px 40px 15px;
+  main section:first-of-type {
+   padding-top: 90px;
    border-bottom: 1px solid #ddd;
-  }
-
-  nav.main ul:last-of-type {
-   display: none;
   }
 
   .banner {
@@ -652,9 +722,7 @@ ul.social li a:hover{
     padding: 10px;
     margin: 0 auto;
   }
-  #menu-bars {
-    display: inline-block;
-  }
+  
 
 
 }
