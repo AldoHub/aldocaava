@@ -429,7 +429,7 @@
 
 /* ------------------------------------- MY STYLING ------------------------------- */
 HTML {
-  background: #ddd;
+  background: #111;
 }
 
 body {
@@ -437,9 +437,11 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    background: #eee; 
-    box-shadow: 0px 5px 2px #888;
-    font-family: "Arvo",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eee;
+    background: #111; 
+    font-family: "Didact Gothic", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 5px 2px #000;
+
 }
 body * {
   transition: all 300ms ease-in-out;
@@ -451,148 +453,225 @@ body * {
    
 }
 
-h1,h2,h3,h4 {
-    font-family: "Arvo",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-nav.main {
-    position: fixed;
-    width: 100%;
-    max-width: 1300px;
-    z-index: 99;
-    font-family: "Questrial", sans-serif;
-    background: #eee;
-    padding:0;
-    margin: 0;
-    text-align: center;
-    
-}
-
-nav.main ul {
-    display: inline-block;
-    width: 42%;
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-   text-align: left;
-}
-nav.main ul li {
-  display: inline-table;
-}
-nav.main ul li a{
-  padding: 12px;
-  display: block;
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-}
-nav.main ul:last-of-type li a:hover{
-  color: #EF740E;
-}
-nav.main ul:last-of-type{
-  text-align: right;
-}
-
-
-.banner {
-    background: url("../images/photo-1508700115892-45ecd05ae2ad.jpg");
-    height: 700px;
-    display: block;
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-main section {
-    padding: 15px 30px;
-    font-family: "Questrial", sans-serif;
-}
-main section p {
-  font-size: 20px;
-}
-
-#myrepos, #myskills {
+.container header {
+  height: 700px;
   text-align: center;
-}
-
-#myrepos h1, #myskills h1 {
-  text-align: left;
-}
-
-canvas {
-    margin-bottom: 50px !important;
-}
-
-.repo {
-  padding: 20px;
-  width: 26%;
-  margin: 5px;
-  text-align: center;
-  height: auto;  
-  display: inline-block;
-}
-
-.repo .letter {
-  font-size: 100px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 0;
-  padding-bottom: 50px;
-}
-
-.repo p a {
-  text-decoration:none;
-  color: #572AFF;
-}
-.repo:hover {
-  box-shadow: 0px 2px 2px #666;
-}
-
-footer {
-   text-align: center;
-   padding: 20px 10px;
-   background: #ddd;  
-   color: #444;
-}
-
-footer ul {
-  text-align: left;
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-}
-
-ul.social {
-  text-align: center;
-  margin: 0;
+  margin-bottom: 200px;
+ 
   
 }
 
-ul.social li {
-  position: relative;
-  display: inline-table;
-  font-size: 35px; 
-  margin:5px 30px;
+.container header h1 {
+  font-family:"Arvo";
+  padding-top: 360px;
+  margin: 0;
+  font-size: 6rem;
+  animation: slideDown 500ms ease-in-out;
 }
 
-ul.social li a{
+.container header p {
+  font-size: 2rem;
+  width: 60%;
+  margin: 30px auto;
+  animation: slideIn 500ms ease-in-out;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #222;
+}
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 1300px;
+  background: #111;
+  border-bottom:1px solid #222;
+  padding: 10px 0;
+  z-index: 99;
+}
+
+nav ul, footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  text-align: right;
+}
+#aldo {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul li, footer ul li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+nav ul li a{
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+nav ul li a:hover{
+  color: #fff;
+ 
+
+}
+
+.container section h1 {
+  color: #333;
+}
+
+section {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 300px 0; 
+  border-bottom: 1px dotted #222;
+}
+
+
+section#myskills p {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 20px;
+ 
+}
+
+section#myrepos .repo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-auto-columns: minmax(200px, auto);
+  grid-gap: 10px;
+}
+
+section#myrepos .repo-container div {
+   border: 1px solid #222;
+   text-align: center;
+   padding: 10px;
+  }
+
+
+.letter {
+  font-size: 9rem;
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 auto;
+ 
+  font-family: "Monoton";
+  text-transform: uppercase;
+  
+}
+
+section#myrepos .repo-container div:hover {
+  animation: borderColorChange 1s ease-in-out infinite alternate;
+}
+
+section#myrepos .repo-container div:hover h2{
+  transform: scale(0.9);
+}
+
+section#myrepos .repo-container div:hover .letter {
+  transform: scale(1.5);
+  animation: colorChange 1s ease-in-out infinite alternate;  
+}
+
+section#myrepos  .repo-container div p:first-of-type {
+  border-bottom: 1px solid #111;
+  padding-bottom: 16px;  
+
+}
+
+section#myrepos  .repo-container div:hover p:first-of-type {
+  border-bottom: 1px dotted #fff;
+
+}
+
+section#myrepos .repo-container div p a {
+  color: #fff;  
+  padding-top: 14px;
+  text-decoration: none;
   display: block;
- color: #777;
+ 
 }
 
-ul.social li a:hover{
-  display: block;
-  color: #EF740E;
+section#myrepos .repo-container div:hover p a {
+ transform: scale(1.1);
+ text-decoration: underline;
+ 
+ 
 }
 
+footer ul.social li a {
+  color: #fff;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+footer ul.social li a:hover i {
+  animation: colorChange 1s ease-in-out infinite alternate; 
+}
+
+
+@keyframes slideDown {
+  0% {opacity: 0;transform: translateY(-50px)};
+  100% {opacity: 1;transform: translateY(0px)};
+}
+
+@keyframes slideIn {
+  0% {opacity: 0;transform: translateX(-90px)};
+  100% {opacity: 1;transform: translateX(0px)};
+}
+
+@keyframes colorChange {
+  0% {color:#FF4900;}
+  20% {color:#2EE863;}
+  40% {color:#05A9FF;}
+  60% {color:#EBFF00;}
+  80% {color:#FA0377;}
+  100% {color:#5400FF;}
+}
+
+@keyframes borderColorChange{
+  0% {border-color:#FF4900;}
+  20% {border-color:#2EE863;}
+  40% {border-color:#05A9FF;}
+  60% {border-color:#EBFF00;}
+  80% {border-color:#FA0377;}
+  100% {border-color:#5400FF;}
+}
+
+@keyframes backgroundColorChange{
+  0% {background-color:#FF4900;}
+  20% {background-color:#2EE863;}
+  40% {background-color:#05A9FF;}
+  60% {background-color:#EBFF00;}
+  80% {background-color:#FA0377;}
+  100% {background-color:#5400FF;}
+}
+
+
+#nav-icon-container {
+  display: none;
+}
 
 #nav-icon{
-  display: none;
+  
   width: 30px;
   height: 30px;
   position: absolute;
   right: 10px;
-  top:24px;
+  top:14px;
   z-index: 99;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -611,7 +690,7 @@ ul.social li a:hover{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #EF740E;
+  background: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -637,6 +716,10 @@ ul.social li a:hover{
   top: 18px;
 }
 
+#nav-icon:hover span{
+  animation: backgroundColorChange 1s ease-in-out infinite alternate; 
+}
+
 #nav-icon.open span:nth-child(1) {
   top: 9px;
   -webkit-transform: rotate(135deg);
@@ -658,71 +741,96 @@ ul.social li a:hover{
   transform: rotate(-135deg);
 }
 
-#menu li{
-  padding: 10px 0;
-  margin: 0;
-}
-#aldo {
-  font-size: 24px;
-}
 
 
-@media (min-width:850px) and (max-width:1000px){
-  .repo{
-    width: 40%;
+@media (min-width:931px) and (max-width:1200px){
+  section#myrepos .repo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-columns: minmax(200px, auto);
+    grid-gap: 10px;
   }
-  
 
 }
 
 
-@media (min-width:0px) and (max-width:849px){
-  nav.main {
-    border-bottom: 4px solid #EF740E;
-    
+@media (min-width:0px) and (max-width:930px){
+
+  .container header h1 {
+    font-family:"Arvo";
+    padding-top: 220px;
+    font-size: 4rem;
   }
-  
-  nav.main ul {
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-  #nav-icon {
+
+  #nav-icon-container {
     display: block;
   }
 
+  #aldo {
+    color: #fff;
+    margin-right: 40px;
+    padding: 10px 0;
+    display: block;
   
-  nav.main ul:first-of-type{
-    text-align: center;
-    
   }
 
-  nav.main ul li {
-    display: block;
-    text-align: center;
-    padding: 14px 0;
+  nav {
+    border: none;
+    padding: 0;
+  }
+
+
+  nav ul:first-of-type {
+    padding: 0;
+    border-bottom: 1px solid #222;
     margin: 0;
   }
-  
-  nav.main ul:last-of-type li:hover {
-    background: #ddd;
-  }
-  main section:first-of-type {
-   padding-top: 90px;
-   border-bottom: 1px solid #ddd;
+
+  nav ul:last-of-type {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
   }
 
-  .banner {
-   display: none;
+  nav ul:last-of-type.hide {
+    height: auto;
     
   }
-  .repo {
-    width: 90%;
+
+  nav ul:last-of-type li {
     display: block;
-    padding: 10px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 10px 0px 0px;
+    border-bottom:1px solid #222; 
   }
+  nav ul:last-of-type li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 3rem;
+  }
+
+  section {
+    width: 90%;
+    margin: 100px auto;
+    border: none;
+    padding: 100px 0; 
+    }
   
+  
+  section#myrepos .repo-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+   padding: 10px;
+   
+  }
+
+  footer ul.social li {
+    display: block;
+  }
+  footer ul.social li a {
+    font-size: 3rem;
+  }
 
 
 }

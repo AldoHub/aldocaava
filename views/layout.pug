@@ -27,22 +27,19 @@ html
 
     
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo|Didact+Gothic|Monoton")
     link(rel="stylesheet" href="/css/main.css")
-    
-    link(href="https://fonts.googleapis.com/css?family=Arvo|Questrial" type="text/css" rel="stylesheet")
-    
   body
     main.container
         nav.main
-            ul(id="menu")
+            ul
                 li
-                    a(href="#" id="aldo") aldo &nbsp;
-                li(id="nav-icon")
-                    div
+                    a(href="#home" id="aldo") aldo
+                li#nav-icon-container  
+                    div#nav-icon
                         span
                         span
-                        span          
-                
+                        span
             ul
                 li
                     a(href="#aboutme" ) About Me
@@ -51,7 +48,10 @@ html
                 li
                     a(href="#myrepos") My Repos    
     
-        header.banner
+        header#home
+            h1 Hi&comma; I am Aldo Caamal
+            p I am a #[em self-taught] Full Stack Web Developer.
+
         
         block content
     
@@ -60,14 +60,13 @@ html
 
   
     footer
-        ul
-            li
-                p Powered by Node / Express / ChartJs / Pug &amp; Github API.
-            li
-                p Contact me on aldocaava@hotmail.com
-
             
         ul.social
+            li
+                p #[em Powered by] Node / Express / CSS Grid / Github &amp; Pug
+
+            li
+                p Contact me on #[strong aldocaava@hotmail.com]
             li 
                 a(href="https://twitter.com/aldocaava" target="_blank")
                     i.fa.fa-twitter(aria-hidden="true")  
@@ -75,18 +74,19 @@ html
             li 
                 a(href="https://github.com/AldoHub" target="_blank")
                     i.fa.fa-github(aria-hidden="true")  
-        
+            li 
+                a(href="https://www.youtube.com/channel/UCsbBhGOM5l927nz5-jTIqlw" target="_blank")
+                    i.fa.fa-youtube-play(aria-hidden="true")  
    
    
    
    
    
-    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous")  
-    script(src="/js/Chart.min.js")          
-    script(src="/js/frontend.js")  
-    script(src="/js/backend.js")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous")
     script(src="/js/zenscroll-min.js")
-   
     script(src="/js/functions.js")

@@ -1,27 +1,32 @@
 extends layout
 block content
     
-    //--svg(id="path")
-    //--    line(x1="0" y1="0" x2="0" y2="300" id="pathline" style="stroke:rgb(135,255,6);stroke-width:2")
-
-    
-
+  
     section#aboutme
-        h1 About Me
-        div.aboutme
-            p I am a self-taught Full Stack Web Developer.
-            p I have been learning Web Technologies for about 3 years or so, but I have been doing it alone, maybe I do not follow all the best practices but I try to improve and learn more every day.
-            p My style is simple, yes, I like simple things, things that show as they are, and I apply this into my designs. To me, to be simple means to stay in touch with the things that matter the most. 
+        h1 Overview.
+        p Yes, you read well, I am a self-taught Full Stack Web Developer, and I am not afraid to say so.
+        p I do not have a degree, so what?. I have learnt all the technologies I know from scratch, searching through documentations, watching youtube tuts even reverse engeneering some pages.
+        p Saying that, my knowledge was built out there, in the wide web, that place we all go, but few learn how to drive through. Of course, my PC Maintenance skills helped a lot... oh did I miss that?... I am a certified #[em PC guy], even took the #[em COMPTIA] ( A+, NETWORk, SECURITY ) preparation courses, but here in Mexico, there are not many chances to take the COMPTIA Certification exams... well maybe in the future.
 
 
     section#myskills
-        h1 What I Know
-        canvas(id="backend")
-        canvas(id="canvas")
-        
+        h1 Skills.
+        p HTML 5
+        p CSS 3
+        p Javascript
+        p Php
+        p MySQL
+        p Angular 2+
+        p React
+        p Redux
+        p Node
+        p Express
+        p Mongo
+        p Photoshop
+        p ... and others more.
 
     section#myrepos
-        h1 My Repositories
+        h1 Repos.
         div.repo-container
             if (repos != null)    
                 each repo, i in repos
